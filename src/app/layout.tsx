@@ -19,9 +19,11 @@ export default function RootLayout({
     <html lang="jp">
       <body>
         {/* header, footerもこのページで設定可能 */}
-        <header className='text-blue-400'>Test Header from src/app/layout.tsx</header>
-        
-        {children}</body>
+        <header className='text-blue-400'>Header from src/app/layout.tsx</header>
+          
+        {children}
+        <footer className='text-yellow-500'>Footer from src/app/layout.tsx</footer>
+      </body>
     </html>
   )
 }
