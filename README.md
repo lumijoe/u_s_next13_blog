@@ -1,21 +1,21 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Next.js13 技術
+
 - フルスタック開発
 - プリレンダリング（SSG/SSR/ISR）
-- 12pagesでなく13appディレクトリの仕様
-- App Router API構築
+- 12pages でなく 13app ディレクトリの仕様
+- App Router API 構築
 - 共通コンポーネント
-- CRUD操作
-- 404エラーページ
+- CRUD 操作
+- 404 エラーページ
 - ローディングアニメーション
-- Supabaseでのデータ永続管理
+- Supabase でのデータ永続管理
 - Typescript
 - TailwindCSS
-- 読み込み速度、SEOの対策
+- 読み込み速度、SEO の対策
 - 動的ルーティングの構築
-
-
+- Unsplash sorce API
 
 ## Getting Started
 
