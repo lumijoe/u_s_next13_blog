@@ -15,7 +15,7 @@ This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next
 - TailwindCSS
 - 読み込み速度、SEO の対策
 - 動的ルーティングの構築
-- Unsplash sorce API
+- Unsplash sorce API 使用、next.config.js 編集
 
 ## Getting Started
 
