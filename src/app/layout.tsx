@@ -3,6 +3,8 @@
 
 import type { Metadata } from 'next'
 import './globals.css'
+import Header from './components/Header'
+import Footer from './components/Footer'
 
 // metadata（v12でのHead, head.tsxの集約）
 export const metadata: Metadata = {
@@ -17,12 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="jp">
-      <body>
-        {/* header, footerもこのページで設定可能 */}
-        <header className='text-blue-400'>Header from src/app/layout.tsx</header>
-          
-        {children}
-        <footer className='text-yellow-500'>Footer from src/app/layout.tsx</footer>
+      {/* 横幅をレスポンシブにするcontainer */}
+      <body className='container mx-auto bg-slate-500 text-white'>
+      {/* header, footerもこのページで設定可能 */}
+      <Header />
+      {children}
+      <Footer />
       </body>
     </html>
   )
