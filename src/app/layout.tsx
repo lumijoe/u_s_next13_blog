@@ -31,7 +31,7 @@ export default function RootLayout({
 }
 
 /* 
-・font(Interは使用しないので)削除
+・font(Interは使用しないので)削除としてのコメントアウト
 import { Inter } from 'next/font/google'
 const inter = Inter({ subsets: ['latin'] })
 return (
