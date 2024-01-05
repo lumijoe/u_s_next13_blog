@@ -38,3 +38,19 @@
 - https://unsplash.com/developers
 - next.config.js で source.unsplash.com を許可する
 - ArticleList.tsx の Image タグ実装事例あり
+
+## モックデータでテスト：最適な JSON サーバーの使用
+
+- JSON 形式で管理できる
+- https://www.npmjs.com/package/json-server#getting-started
+- npm i json-server
+- src/data/posts.json ファイルを作成し、ダミーデータを記述して準備
+- ファイルを起動させる
+  - json-server --watch db.json をターミナルで開くよりも
+  - package.json で起動を楽にするため
+  - script に"json-server": "json-server --watch src/data/posts.json --port 3001"を追加する
+  - npm run json-server 実行
+  - ターミナル Resourced にエンドポイントが表示されるのでコピー http://localhost:3001/posts
+  - ブラウザで確認　 http://localhost:3001/posts
+  - Json 形式で表示されるのが確認できれば起動テストは完了
+  - これを取得してフロント側で描画するための API 構築実装に取り掛かる
