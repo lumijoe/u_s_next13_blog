@@ -24,8 +24,14 @@
   - 全ページでの metadata, header, footer の管理が可能
   - Layout や Header,Footer コンポーネントをページ毎で import せずともこの layout.tsx で管理が可能
 - page.tsx:そのディレクトリで表示される html ページとなる
+
   - ルート直下の page.tsx:アクセスされたら表示される html
   - src/app/articles/page.tsx:articles ディレクトリで表示される html
+
+## src/app ディレクトリ
+
+- src/app ディレクトリ直下の page.tsx:　 index.html のような最初のページ
+- src/app ディレクトリ直下の layout.tsx: 全ページ共通の設定が可能（ヘッダーフッター）
 
 ## 画像 Unsplash を source API で実装する
 
