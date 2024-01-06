@@ -2,8 +2,14 @@
 
 ## 起動
 
+**クライアント**
+
 - npm run dev, localhost:3000
 - nextversion 確認 package.json:"next":13.5.6
+
+**JSON サーバー**
+
+- npm run json-server, http://localhost:3001/posts
 
 ## ファイル
 
@@ -52,5 +58,5 @@
   - npm run json-server 実行
   - ターミナル Resourced にエンドポイントが表示されるのでコピー http://localhost:3001/posts
   - ブラウザで確認　 http://localhost:3001/posts
-  - Json 形式で表示されるのが確認できれば起動テストは完了
+  - Json 形式でブラウザに表示されたら起動テストは完了
   - これを取得してフロント側で描画するための API 構築実装に取り掛かる
