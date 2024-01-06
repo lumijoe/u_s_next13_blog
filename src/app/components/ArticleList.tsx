@@ -1,15 +1,21 @@
 import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
+import { Article } from "@/types"
 
+type ArticleListProps = {
+    articles: Article[];
+};
 
-export default function ArticleList () {
+export default function ArticleList ({ articles }: ArticleListProps) {
   return (
     <div>
-      <article className='shadow my-4'>
+        {articles.map((article) => (
+        <article className='shadow my-4' key={article.id}>
         <Link href="#" className='hover:opacity-75'>
             {/* UnsplashのAPI, next.config.jsの設定 */}
-            <Image src="https://source.unsplash.com/1000x500/?motorsports=6" 
+            <Image 
+            src="https://source.unsplash.com/1000x500/?motorsports=6"
             alt="" 
             width={1000} 
             height={500} 
@@ -31,7 +37,7 @@ export default function ArticleList () {
       <article className='shadow my-4'>
         <Link href="#" className='hover:opacity-75'>
             {/* UnsplashのAPI, next.config.jsの設定 */}
-            <Image src="https://source.unsplash.com/1000x500/?motorsports=8" 
+            <Image src="https://source.unsplash.com/1000x500/?motorsports=8"
             alt="" 
             width={1000} 
             height={500} 
@@ -116,6 +122,8 @@ export default function ArticleList () {
             </button>
         </div>
       </article>
+      ))}
+      
     </div>
   )
 }
